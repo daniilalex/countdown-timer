@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: Playball;
+}
+body {
+  background-image: url("/img/pexels-sajjad-naqvi-9892284.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+
+  .count-timer,
+  .year {
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+  .wrapper {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+
+    .heading,
+    .message {
+      text-align: center;
+      width: 550px;
+      font-size: 62px;
+      font-weight: bold;
+      text-decoration: overline;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    .countdown-timer {
+      display: flex;
+
+      .count-timer {
+        width: 800px;
+        display: flex;
+        justify-content: space-evenly;
+        .timer {
+          margin-left: 20px;
+          display: flex;
+          align-items: center;
+          h2 {
+            font-size: 42px;
+          }
+          small {
+            margin-left: 20px;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .year {
+      margin-top: 40px;
+      font-size: 48px;
+      width: 150px;
+    }
+  }
+}
